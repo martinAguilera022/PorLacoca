@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { onAuthStateChanged, type User } from "firebase/auth";
 import { auth } from "../../lib/firebase";
-import BottomNavBar from "../components/BottomNavBar";
+import BottomNavBar from "../components/BottomNavbar";
 import Navbar from "../components/Navbar";
 import { usePathname } from "next/navigation";
 
