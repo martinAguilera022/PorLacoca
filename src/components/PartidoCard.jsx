@@ -11,7 +11,7 @@ import {toast} from "sonner";
 import unirseAlPartido from "../utils/unirseAlPartido";
 import useAuth from "../app/auth/AuthContext";
 import { useEffect } from "react";
-const PartidoCard = ({ partido }) => {
+const PartidoCard = ({ partido, onVerSolicitudes }) => {
  
   const {user ,userData} = useAuth();
   const [fechaAmigable, setFechaAmigable] = useState("");
