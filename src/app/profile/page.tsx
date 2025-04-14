@@ -16,8 +16,19 @@ import {
 import Swal from 'sweetalert2'
 import { useRouter } from "next/navigation"; 
 
+interface Usuario {
+  uid: string;
+  nombre: string;
+  foto: string;
+  categoria: string;
+  phone: string;
+  side: string;
+  email: string;
+}
+
 export default function Perfil() {
-  const [usuario, setUsuario] = useState(null);
+  const [usuario, setUsuario] = useState<Usuario | null>(null);
+
   const [mounted, setMounted] = useState(false);
   const router = useRouter();
 
