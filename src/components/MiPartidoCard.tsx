@@ -67,7 +67,7 @@ export default function MiPartidoCard({ partido, onVerSolicitudes }: any) {
 
       <div className="flex items-center gap-2 text-sm">
         <FaUser className="text-white" />
-        <span>{obtenerJugadoresFaltantes(partido.tipo, partido.jugadores)}</span>
+        <span>{obtenerJugadoresFaltantes(partido.tipo)}</span>
       </div>
 
       {Array.isArray(partido.solicitudesPendientes) && partido.solicitudesPendientes.length > 0 ? (
